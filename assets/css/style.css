@@ -6,15 +6,6 @@ html {
     display: none;
 }
 
-body {
-	color: #333;
-	background: #f8f8f8;
-	font-family: monospace;
-	font-size: 1rem;
-	margin: 20px;
-	line-height: 2;
-}
-
 h3, h4, h5 {
 	color: #0d6efd
 }
@@ -77,6 +68,24 @@ footer {
 	background-color: rgba(0, 0, 0, 0);
 	background-size: 100% var(--height);
 	background-position-y: 0px;
+}
+
+body {
+	color: #333;
+	background-color: white;
+	font-family: monospace;
+	font-size: 1rem;
+	margin: 20px;
+	line-height: 2;
+}
+
+.dark-mode {
+	color: lime;
+	background-color: black;
+	font-family: monospace;
+	font-size: 1rem;
+	margin: 20px;
+	line-height: 2;
 }
 
 @keyframes cursor {

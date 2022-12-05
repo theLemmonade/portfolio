@@ -1,9 +1,10 @@
 const title = document.querySelector('#title');
 const container = document.querySelector('#container')
 let n;
-const message = `>_ portfolio-site:~ --user=root -p
+const message = `>_ portfolio-site:~ --u root -p
 >_ Enter Password: **********
 >_ Welcome.`;
+
 function rerun(){
   title.textContent = '';
   n = 0;
@@ -40,3 +41,8 @@ function display(){
 }
 
 setTimeout(() => {display();}, 6000);
+
+function darkmode(){
+	const body = document.body;
+	body.classList.toggle("dark-mode");
+}
