@@ -2,8 +2,20 @@ html {
 	font-size: 18px;
 }
 
+.navbar, #toggle {
+	font-size: 20px;
+}
+
+#toggleBtn {
+	color: #333;
+}
+
+#toggleBtn:hover {
+	background-color: rgba(204, 204, 204, 0.5);
+}
+
 #container {
-    display: none;
+    display:none
 }
 
 h3, h4, h5 {
@@ -23,6 +35,7 @@ h2 {
 	display: inline-block;
 	max-width: fit-content;
 	font-weight: 900;
+	padding-bottom: 6px;
 }
 
 #title {

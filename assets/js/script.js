@@ -1,9 +1,13 @@
+const body = document.body;
 const title = document.querySelector('#title');
-const container = document.querySelector('#container')
-let n;
+let toggleBtn = document.querySelector('#toggleBtn')
+const container = document.querySelector('#container');
 const message = `>_ portfolio-site:~ --u root -p
 >_ Enter Password: **********
+>_
 >_ Welcome.`;
+let isDark = false;
+let n;
 
 function rerun(){
   title.textContent = '';
@@ -43,6 +47,16 @@ function display(){
 setTimeout(() => {display();}, 6000);
 
 function darkmode(){
-	const body = document.body;
-	body.classList.toggle("dark-mode");
+	body.classList.toggle('dark-mode');
+	if (isDark == true) {
+		toggleBtn.innerHTML = 'dark <i class="bi bi-moon"></i>';
+		toggleBtn.setAttribute('style', 'color: #333; border-color: #333;');
+		isDark = false;
+	} else {
+		toggleBtn.innerHTML = 'light <i class="bi bi-sun"></i>';
+		toggleBtn.setAttribute('style', 'color: lime; border-color: lime;');
+		isDark = true;
+	} return;
 }
+
+toggleBtn.addEventListener('click', darkmode);
