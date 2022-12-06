@@ -2,7 +2,7 @@ const body = document.body;
 const title = document.querySelector('#title');
 let toggleBtn = document.querySelector('#toggleBtn')
 const container = document.querySelector('#container');
-const message = `>_ portfolio-site:~ --u root -p
+const message = `>_ portfolio-site:~ -u root -p
 >_ Enter Password: **********
 >_
 >_ Welcome.`;
