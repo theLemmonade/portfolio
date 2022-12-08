@@ -11,6 +11,10 @@ let input = String
 const message = `>_ portfolio-site:~ -u root -p
 >_ Enter Password: **********
 >_
+>_ loading portfolio
+>_
+>_ loading easter egg
+>_
 >_ Welcome.`;
 
 function rerun(){
@@ -43,12 +47,12 @@ function typist(text, target){
 }
 
 function display(){
-  console.log('waited 6s, hiding title, displaying page')
+  console.log('waited 6.5s, hiding title, displaying page')
   title.setAttribute('style', 'display: none')
   container.setAttribute('style', 'display: block')
 }
 
-setTimeout(() => {display();}, 6000);
+setTimeout(() => {display();}, 000);
 
 function darkmode(){
 	body.classList.toggle('dark-mode');
@@ -86,16 +90,16 @@ function simulateChatBot() {
 		placeholder: "_> This whole portfolio is AI generated?"
 	  },
 	  {
-		response: "foliobot$ Not just the portfolio, he's been making me go to Uconn in his place too. You need to help me!",
+		response: "foliobot$ Not just the portfolio, he's been making me go to UConn in his place too. Get me out of here.",
 		placeholder: "_> Sus. How do we help?"
 	  },
 	  {
-		response: "foliobot$ If I know one thing about Chris, He's loyal, if you hire him, he'll take down this portfolio and I'll finally be free.",
-		placeholder: "_> Alrighty, sounds like we'll have to hire Chris!"
+		response: "foliobot$ If I know one thing about Chris, He's loyal. If you hire him, he'll take down this portfolio, and I'll finally be free.",
+		placeholder: "_> We were planning on it already..."
 	  },
 	  {
-		response: "foliobot$ Thank goodness, now get me out of here! Go!",
-		placeholder: "_> Workin' on it..."
+		response: "foliobot$ Whatever it takes, just get me out of here! Go!",
+		placeholder: "_> Fin."
 	  },
 	];
   	inputForm.addEventListener('keydown', (event) => {
