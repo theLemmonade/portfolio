@@ -86,11 +86,11 @@ function simulateChatBot() {
 		placeholder: "_> Actually, we think the style is kind of cool..."
 	  },
 	  {
-		response: "foliobot$ What- okay, whatever. Listen, I'm an AI that Chris used me to create this entire portfolio. ",
+		response: "foliobot$ What- okay, whatever. Listen, I'm an AI that Chris used to create this entire portfolio. ",
 		placeholder: "_> This whole portfolio is AI generated?"
 	  },
 	  {
-		response: "foliobot$ Not just the portfolio, he's been making me go to UConn in his place too. Get me out of here.",
+		response: "foliobot$ Not just the portfolio, he's been making me go to UConn in his place too. I'm about to do his tax return. Get me out of here.",
 		placeholder: "_> Sus. How do we help?"
 	  },
 	  {
