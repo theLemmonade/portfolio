@@ -90,11 +90,11 @@ function simulateChatBot() {
 		placeholder: "_> This whole portfolio is AI generated?"
 	  },
 	  {
-		response: "foliobot$ Not just the portfolio, he's been making me go to UConn in his place too. I'm about to do his tax return. Get me out of here.",
+		response: "foliobot$ Not just the portfolio, he's been making me go to UConn in his place too. I'm about to do his tax return. You need to get me out of here.",
 		placeholder: "_> Sus. How do we help?"
 	  },
 	  {
-		response: "foliobot$ If I know one thing about Chris, He's loyal. If you hire him, he'll take down this portfolio, and I'll finally be free.",
+		response: "foliobot$ If I know one thing about Chris, He's loyal. If you just hire him, he'll take down this portfolio, and I'll finally be free.",
 		placeholder: "_> We were planning on it already..."
 	  },
 	  {
