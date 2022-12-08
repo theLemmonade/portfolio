@@ -86,17 +86,23 @@ h2 {
 #window{
 	display: block;
 	text-align: left;
-	line-height: .5;
+	line-height: 1;
 	position: relative;
 	transform: translateY(-820px);
+	caret-shape: block;
 }
 
-#form {
+#form, #form:focus, #ford:focus {
 	justify-items: center;
 	background: none;
-	border: 0px;
+	border: none;
+	outline: none;
 	color: #333;
-	width: 1280px;
+	width: 1400px;
+}
+
+.bot {
+	font-weight: 900;
 }
 
 footer {
@@ -139,7 +145,7 @@ body {
 	margin: 20px;
 	line-height: 2;
 }
-
+  
 @keyframes cursor {
 	0% {
 		opacity: 0;

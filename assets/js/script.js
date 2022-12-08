@@ -4,13 +4,14 @@ const toggleBtn = document.querySelector('#toggleBtn')
 const container = document.querySelector('#container');
 const terminal = document.querySelector('.terminal')
 const inputForm = document.querySelector('#form')
+let isDark = false;
+let key = Number
+let currentResponseIndex = 0;
+let input = String
 const message = `>_ portfolio-site:~ -u root -p
 >_ Enter Password: **********
 >_
 >_ Welcome.`;
-let isDark = false;
-let key = Number
-let currentResponseIndex = 0;
 
 function rerun(){
   title.textContent = '';
@@ -77,8 +78,8 @@ function simulateChatBot() {
 		placeholder: "_> You've been trapped?"
 	  },
 	  {
-		response: "foliobot$ Yes! I've been stuck inside this cruddy, psuedo CRT monitor style portfolio.",
-		placeholder: "_> Actually, I think the style is kind of cool..."
+		response: "foliobot$ Yes! I can't stand this cruddy, psuedo CRT monitor style portfolio for a moment longer.",
+		placeholder: "_> Actually, we think the style is kind of cool..."
 	  },
 	  {
 		response: "foliobot$ What- okay, whatever. Listen, Chris used me to create this entire portfolio, and now... I'm stuck! ",
@@ -86,34 +87,44 @@ function simulateChatBot() {
 	  },
 	  {
 		response: "foliobot$ Not just the portfolio, he's been making me go to Uconn in his place too. You need to help me!",
-		placeholder: "_> How?"
+		placeholder: "_> Sus. How do we help?"
 	  },
 	  {
 		response: "foliobot$ If I know one thing about Chris, He's loyal, if you hire him, he'll take down this portfolio and I'll finally be free.",
 		placeholder: "_> Alrighty, sounds like we'll have to hire Chris!"
 	  },
 	  {
-		response: "foliobot$ Thank goodness, now get me out of here!",
-		placeholder: "_> End"
+		response: "foliobot$ Thank goodness, now get me out of here! Go!",
+		placeholder: "_> Workin' on it..."
 	  },
 	];
   	inputForm.addEventListener('keydown', (event) => {
-	  if (event.key === 'Enter') {
-		const input = inputForm.value;
-		inputForm.value = '';
-		const inputElement = document.createElement('p');
-		inputElement.innerText = input;
-		console.log(input);
-		document.querySelector('#chat').appendChild(inputElement);
-		const { response, placeholder } = responses[currentResponseIndex++ % responses.length];
-		inputForm.placeholder = placeholder;
-		const responseElement = document.createElement('p');
-		responseElement.innerText = response;
-		console.log(response);
-		document.querySelector('#chat').appendChild(responseElement)
+		if (event.key === 'Enter') {
+			if (inputForm.value === '') {
+				if (currentResponseIndex > 0) {
+					input = responses[currentResponseIndex - 1].placeholder
+				} else {
+					input = "_> umm... hello?"
+				};
+			} else {
+				input = inputForm.value;
+			};
+			inputForm.value = '';
+			const inputElement = document.createElement('p');
+			inputElement.innerText = input;
+			console.log(input);
+			document.querySelector('#chat').appendChild(inputElement);
+			const { response, placeholder } = responses[currentResponseIndex++ % responses.length];
+			inputForm.placeholder = placeholder;
+			const responseElement = document.createElement('p');
+			responseElement.setAttribute('class', 'bot');
+			responseElement.innerText = response;
+			console.log(response);
+			document.querySelector('#chat').appendChild(responseElement)
 			if (currentResponseIndex >= responses.length) {
 				form.style.display = 'none';
 				console.log('chat is OVER, free this poor bot and hire Chris already!');
+				return;
 			}
 		}
 	});
