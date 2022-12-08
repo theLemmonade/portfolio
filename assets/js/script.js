@@ -1,17 +1,20 @@
 const body = document.body;
 const title = document.querySelector('#title');
-let toggleBtn = document.querySelector('#toggleBtn')
+const toggleBtn = document.querySelector('#toggleBtn')
 const container = document.querySelector('#container');
+const terminal = document.querySelector('.terminal')
+const inputForm = document.querySelector('#form')
 const message = `>_ portfolio-site:~ -u root -p
 >_ Enter Password: **********
 >_
 >_ Welcome.`;
 let isDark = false;
-let n;
+let key = Number
+let currentResponseIndex = 0;
 
 function rerun(){
   title.textContent = '';
-  n = 0;
+  key = 0;
   typist(message, title);
 };
 
@@ -27,14 +30,14 @@ function interval(letter){
 }
 
 function typist(text, target){
-	if(typeof(text[n]) != 'undefined'){
-		target.textContent += text[n];
+	if(typeof(text[key]) != 'undefined'){
+		target.textContent += text[key];
 	}
-	n++;
-	if(n < text.length){
+	key++;
+	if(key < text.length){
 		setTimeout(function(){
 			typist(text, target)
-		}, interval(text[n - 1]));
+		}, interval(text[key - 1]));
 	} 
 }
 
@@ -44,19 +47,76 @@ function display(){
   container.setAttribute('style', 'display: block')
 }
 
-setTimeout(() => {display();}, 6000);
+setTimeout(() => {display();}, 0000);
 
 function darkmode(){
 	body.classList.toggle('dark-mode');
 	if (isDark == true) {
 		toggleBtn.innerHTML = 'dark <i class="bi bi-moon"></i>';
 		toggleBtn.setAttribute('style', 'color: #333; border-color: #333;');
+		terminal.setAttribute('id', 'terminal-light');
+		terminal.setAttribute('src', './assets/images/light.png');
+		inputForm.setAttribute('style', 'color: #333;')
 		isDark = false;
 	} else {
 		toggleBtn.innerHTML = 'light <i class="bi bi-sun"></i>';
 		toggleBtn.setAttribute('style', 'color: lime; border-color: lime;');
+		terminal.setAttribute('id', 'terminal-dark');
+		terminal.setAttribute('src', './assets/images/dark.png');
+		inputForm.setAttribute('style', 'color: lime;')
 		isDark = true;
 	} return;
 }
 
 toggleBtn.addEventListener('click', darkmode);
+
+function simulateChatBot() {
+	const responses = [
+	  {
+		response: "foliobot$ Sheesh, am I glad to read you! I've been trapped in here for weeks...",
+		placeholder: "_> You've been trapped?"
+	  },
+	  {
+		response: "foliobot$ Yes! I've been stuck inside this cruddy, psuedo CRT monitor style portfolio.",
+		placeholder: "_> Actually, I think the style is kind of cool..."
+	  },
+	  {
+		response: "foliobot$ What- okay, whatever. Listen, Chris used me to create this entire portfolio, and now... I'm stuck! ",
+		placeholder: "_> This whole portfolio is AI generated?"
+	  },
+	  {
+		response: "foliobot$ Not just the portfolio, he's been making me go to Uconn in his place too. You need to help me!",
+		placeholder: "_> How?"
+	  },
+	  {
+		response: "foliobot$ If I know one thing about Chris, He's loyal, if you hire him, he'll take down this portfolio and I'll finally be free.",
+		placeholder: "_> Alrighty, sounds like we'll have to hire Chris!"
+	  },
+	  {
+		response: "foliobot$ Thank goodness, now get me out of here!",
+		placeholder: "_> End"
+	  },
+	];
+  	inputForm.addEventListener('keydown', (event) => {
+	  if (event.key === 'Enter') {
+		const input = inputForm.value;
+		inputForm.value = '';
+		const inputElement = document.createElement('p');
+		inputElement.innerText = input;
+		console.log(input);
+		document.querySelector('#chat').appendChild(inputElement);
+		const { response, placeholder } = responses[currentResponseIndex++ % responses.length];
+		inputForm.placeholder = placeholder;
+		const responseElement = document.createElement('p');
+		responseElement.innerText = response;
+		console.log(response);
+		document.querySelector('#chat').appendChild(responseElement)
+			if (currentResponseIndex >= responses.length) {
+				form.style.display = 'none';
+				console.log('chat is OVER, free this poor bot and hire Chris already!');
+			}
+		}
+	});
+}
+
+window.addEventListener('load', () => simulateChatBot());

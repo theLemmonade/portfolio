@@ -59,8 +59,47 @@ h2 {
 	margin-bottom: -25%;
 }
 
+#launchwhatch {
+	position: relative;
+	margin-left: 44%;
+	translate: 0px -200px;
+}
+
+#easteregg{
+	margin-top: 100px;
+}
+
+#terminal-light{
+	position: relative;
+	max-width: 1500px;
+	left: 50%;
+	transform: translate(-50%, -0%);
+}
+
+#terminal-dark {
+	position: relative;
+	max-width: 1500px;
+	left: 50%;
+	transform: translate(-50%, -0%);
+}
+
+#window{
+	display: block;
+	text-align: left;
+	line-height: .5;
+	position: relative;
+	transform: translateY(-820px);
+}
+
+#form {
+	justify-items: center;
+	background: none;
+	border: 0px;
+	color: #333;
+	width: 1280px;
+}
+
 footer {
-	margin: 80px;
 	display: flex;
 	justify-content: center;
 }
