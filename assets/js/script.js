@@ -52,7 +52,7 @@ function display(){
   container.setAttribute('style', 'display: block')
 }
 
-setTimeout(() => {display();}, 000);
+setTimeout(() => {display();}, 6500);
 
 function darkmode(){
 	body.classList.toggle('dark-mode');
