@@ -1,88 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>chris lemmon</title>
-  </head> 
-  <body class="outer">
-    <div class="navbar">
-      <div class="mx-5"><b>🍋chris</b></div>
-      <div class="d-flex">
-        <div id="toggleBtn" class="btn btn-outline-secondary">dark <i class="bi bi-moon"></i></div>
-        <a class="nav-link mx-2 me-5" href="#socials"><u>socials</u> ></a>
-      </div>
-    </div>
-    <div id="title"><!-- intro sequence --></div>
-    <div id="container" class="container-lg">
-      <h1 class="d-flex justify-content-center">you're visting chris lemmon's portfolio</h1>
-      <h6 class="d-flex justify-content-center">(hire him!)</h6>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>
-      <h3>bio</h3>
-      <p>i'm a ct born professional with a decade of experience in sales that's opening a new chapter in full stack dev. my current goal is to find the right team to start this new chapter with!</p>
-      <p><b>traits that (my wife would use to) describe me include:</b></p>
-      <p style="margin-left:20px"><i class="bi bi-pencil"></i> sharp: i have a knack for learning what makes a system tick. I work very hard towards understanding codebases.</p>
-      <p style="margin-left:20px"><i class="bi bi-lightbulb"></i> adaptable: i can wear many hats, and it doesn't take me a long time to change said hats.</p>
-      <p style="margin-left:20px"><i class="bi bi-emoji-smile"></i> outgoing: i'd get along swimingly with your team, somehow tenaciously friendly?</p>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>
-      <h3>experience</h3>
-      <p>i'm currently attending university of connecticut's full stack development bootcamp. i'm learning a lot, at a very rapid pace. my plan is to learn a lot at a rapid pace at your company, too!</p>
-      <p><b>so far, my skills include:</b></p>
-      <p style="margin-left:20px"><i class="bi bi-filetype-js"></i> js, node.js, express.js</p>
-      <p style="margin-left:20px"><i class="bi bi-filetype-html"></i> html, css, bootstrap, figma</p>
-      <p style="margin-left:20px"><i class="bi bi-terminal"></i> zsh, bash, sql</p>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>       <h3>portfolio</h3>
-      <h2 class="d-flex justify-content-center">whatch</h2>
-      <p class="d-flex justify-content-center">movie night selectifier</p>
-      <div>
-        <img id="whatch" src="./assets/images/hero.png"></img>
-        <div  class="whatchtext">
-          <h2>Welcome to <b>What</b>ch</h3>
-          <p><b>What</b>ch fetches a random movie choice.</p>
-          <p>Three questions seperate you from a new favorite cinematic experience!</p>
-          <a href="https://thelemmonade.github.io/project-whatch/" target="blank" type="button" class="btn btn-danger" id="launchwhatch">give it a try</a>
-        </div>
-      </div>
-      <p>wondering what movie to whatch tonight? take a seat, let us help you make a pick! whatch queries users on their preferences, and then uses an api to fetch 20 movies, providing one random choice as a response. whatch provides rich results with images, descriptors, a trailer, and links to view the content on any streaming platform that hosts it.</p>
-      <a href="https://github.com/thelemmonade/project-whatch" target="blank" type="button" class="btn btn-outline-primary">repo <i class="bi bi-journal-code"></i></a><a href="https://thelemmonade.github.io/project-whatch/" target="blank" type="button" class="btn btn-outline-primary">launch ></i></i></a>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>
-      <p class="d-flex justify-content-center">content placeholder</p>
-      <p style="color:red"><i>quiz app here</i></p>
-      <img id="placeholder" src="./assets/images"></img>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="https://github.com/thelemmonade/" target="blank" type="button" class="btn btn-outline-primary">repo <i class="bi bi-journal-code"></i></a><a href="https://thelemmonade.github.io/" target="blank" type="button" class="btn btn-outline-primary">launch ></i></i></a>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>
-      <p class="d-flex justify-content-center">content placeholder</p>
-      <img id="placeholder" src="./assets/images"></img>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="https://github.com/thelemmonade/" target="blank" type="button" class="btn btn-outline-primary">repo <i class="bi bi-journal-code"></i></a><a href="https://thelemmonade.github.io/" target="blank" type="button" class="btn btn-outline-primary">launch ></i></i></a>
-      <p class="d-flex justify-content-center">==============================================================================================================</p>
-      <h3 id="socials">socials</h3>
-      <a href="https://www.linkedin.com/in/christopherboydlemmon/" target="blank" type="button" class="btn btn-lg btn-outline-primary">linkedin <i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/thelemmonade" target="blank" type="button" class="btn btn-lg btn-outline-primary">github <i class="bi bi-github"></i></a>
-      <a href="mailto:thelemmonade+contactme@icloud.com" target="blank" type="button" class="btn btn-lg btn-outline-primary">contact me <i class="bi bi-envelope-paper-fill"></i></a>
-      <div id="easteregg">
-        <h2 style="color:red; text-align: center;">* WORK IN PROGRESS *</h2>
-        <h4 style="color:red; text-align: center;">To-do:</h4>
-        <h5 style="color:red; text-align: center;">finish portfolio (ditch CSS scan lines?) ___________ ☐</i></h5>
-        <h5 style="color:red; text-align: center;">turn down twitter job offer ________________________ ☐</i></h5>
-        <h5 style="color:red; text-align: center;">dismiss self-aware AI chat-bot _____________________ ☐</i></h5>
-        <img id="terminal-light" class="terminal" src="./assets/images/light.png">
-        <div id="window">
-          <div id="chat">
-            <p>import openai</p>
-            <p>C:CHRIS/BOOTCAMP/HTML:~ foliobot$ Hello!! Is that a visitor!? Please, you need to help me. <b>Type something below to respond!</b></p>
-          </div>
-          <input placeholder="_> umm... hello?
-          (hint: you can press enter to autocomplete)" class="terminal" id="form" maxlength="100">
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
-</html> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>chris lemmon</title>
+	</head>
+	<body class="outer">
+		<div class="navbar">
+			<div class="mx-5"><b>🍋chris</b></div>
+			<div class="d-flex">
+				<div id="toggleBtn" class="btn btn-outline-secondary">
+					dark <i class="bi bi-moon"></i>
+				</div>
+				<a class="nav-link mx-2 me-5" href="#socials"><u>socials</u> ></a>
+			</div>
+		</div>
+		<div id="title"><!-- intro sequence --></div>
+		<div id="container" class="container-lg">
+			<h1 class="d-flex justify-content-center">
+				you're visiting chris lemmon's portfolio
+			</h1>
+			<h6 class="d-flex justify-content-center">(hire him!)</h6>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<h3>bio</h3>
+			<p>
+				i'm a ct born professional with a decade of experience in sales that's
+				opening a new chapter in full stack dev. my current goal is to find the
+				right team to start this new chapter with!
+			</p>
+			<p><b>traits that (my wife would use to) describe me include:</b></p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-pencil"></i> sharp: i have a knack for learning what
+				makes a system tick. I work very hard towards understanding codebases.
+			</p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-lightbulb"></i> adaptable: i can wear many hats, and it
+				doesn't take me a long time to change said hats.
+			</p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-emoji-smile"></i> outgoing: i'd get along swimingly with
+				your team, somehow tenaciously friendly?
+			</p>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<h3>experience</h3>
+			<p>
+				i'm currently attending university of connecticut's full stack
+				development bootcamp. i'm learning a lot, at a very rapid pace. my plan
+				is to learn a lot at a rapid pace at your company, too!
+			</p>
+			<p><b>so far, my skills include:</b></p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-filetype-js"></i> js, node.js, express.js
+			</p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-filetype-html"></i> html, css, bootstrap, figma
+			</p>
+			<p style="margin-left: 20px">
+				<i class="bi bi-terminal"></i> zsh, bash, sql
+			</p>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<h3>portfolio</h3>
+			<h2 class="d-flex justify-content-center">whatch</h2>
+			<p class="d-flex justify-content-center">movie night selectifier</p>
+			<div>
+				<img id="whatch" src="./assets/images/hero.png" />
+				<div class="whatchtext">
+					<h2>Welcome to <b>What</b>ch</h2>
+					<p><b>What</b>ch fetches a random movie choice.</p>
+					<p>
+						Three questions seperate you from a new favorite cinematic
+						experience!
+					</p>
+					<a
+						href="https://thelemmonade.github.io/project-whatch/"
+						target="blank"
+						type="button"
+						class="btn btn-danger"
+						id="launchwhatch"
+						>give it a try</a
+					>
+				</div>
+			</div>
+			<p>
+				wondering what movie to whatch tonight? take a seat, let us help you
+				make a pick! whatch queries users on their preferences, and then uses an
+				api to fetch 20 movies, providing one random choice as a response.
+				whatch provides rich results with images, descriptors, a trailer, and
+				links to view the content on any streaming platform that hosts it.
+			</p>
+			<a
+				href="https://github.com/thelemmonade/project-whatch"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>repo <i class="bi bi-journal-code"></i></a
+			><a
+				href="https://thelemmonade.github.io/project-whatch/"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>launch ></a
+			>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<p class="d-flex justify-content-center">content placeholder</p>
+			<p style="color: red"><i>quiz app here</i></p>
+			<img id="placeholder" src="./assets/images" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<a
+				href="https://github.com/thelemmonade/"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>repo <i class="bi bi-journal-code"></i></a
+			><a
+				href="https://thelemmonade.github.io/"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>launch ></a
+			>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<p class="d-flex justify-content-center">content placeholder</p>
+			<img id="placeholder" src="./assets/images" />
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<a
+				href="https://github.com/thelemmonade/"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>repo <i class="bi bi-journal-code"></i></a
+			><a
+				href="https://thelemmonade.github.io/"
+				target="blank"
+				type="button"
+				class="btn btn-outline-primary"
+				>launch ></a
+			>
+			<p class="d-flex justify-content-center">
+				==============================================================================================================
+			</p>
+			<h3 id="socials">socials</h3>
+			<a
+				href="https://www.linkedin.com/in/christopherboydlemmon/"
+				target="blank"
+				type="button"
+				class="btn btn-lg btn-outline-primary"
+				>linkedin <i class="bi bi-linkedin"></i
+			></a>
+			<a
+				href="https://github.com/thelemmonade"
+				target="blank"
+				type="button"
+				class="btn btn-lg btn-outline-primary"
+				>github <i class="bi bi-github"></i
+			></a>
+			<a
+				href="mailto:thelemmonade+contactme@icloud.com"
+				target="blank"
+				type="button"
+				class="btn btn-lg btn-outline-primary"
+				>contact me <i class="bi bi-envelope-paper-fill"></i
+			></a>
+			<div id="easteregg">
+				<h2 style="color: red; text-align: center">* WORK IN PROGRESS *</h2>
+				<h4 style="color: red; text-align: center">do-do:</h4>
+				<h5 style="color: red; text-align: center">
+					finish portfolio (ditch CSS scan lines?) ___________ ☐
+				</h5>
+				<h5 style="color: red; text-align: center">
+					turn down twitter job offer ________________________ ☐
+				</h5>
+				<h5 style="color: red; text-align: center">
+					dismiss self-aware AI chat-bot _____________________ ☐
+				</h5>
+				<img
+					id="terminal-light"
+					class="terminal"
+					src="./assets/images/light.png"
+				/>
+				<div id="window">
+					<div id="chat">
+						<p>import openai</p>
+						<p>
+							C:CHRIS/BOOTCAMP/HTML:~ foliobot$ Hello!! Is that a visitor!?
+							Please, you need to help me.
+							<b>Type something below to respond!</b>
+						</p>
+					</div>
+					<input
+						placeholder="_> umm... hello?
+          (hint: you can press enter to autocomplete)"
+						class="terminal"
+						id="form"
+						maxlength="100"
+					/>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
