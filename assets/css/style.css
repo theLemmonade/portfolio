@@ -47,6 +47,12 @@ a {
   padding-bottom: 6px;
 }
 
+input {
+	outline: none;
+	border-style: none;
+}
+
+
 #title {
   display: block;
   white-space: pre-line;
@@ -62,14 +68,13 @@ h1:after {
 
 /* HEADSPACE */
 
-#heroEl {
+#headspaceEl {
 	width: 95%;
-	max-width: 1500px;
-	background-color: rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(30px);
-	margin: auto;
-	margin-top: 10%;
-	padding: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+	backdrop-filter: blur(2px);
+	padding: 50px;
 	border-radius: 15px;
 	border: 2px solid rgba(0, 0, 0, 0.095);
 }
@@ -84,14 +89,13 @@ h1:after {
 
 #heroSpan {
 	font-weight: 700;
-	color: white;
 }
 
 #heroIcon {
 	display:inline-block;
-	height: 55px;
-	margin: 0px 7px 0px 0px;
-	transform:translateY(-5px);
+	height: 30px;
+	margin: 0px 3px 0px 0px;
+	transform:translateY(-3px);
 }
 
 #promptEl {
@@ -105,10 +109,6 @@ h1:after {
 #promptInput {
 	flex-grow: 1;
 	margin-left: 5px;
-}
-
-.spinner-border {
-	margin: 2px 10px 1px 0px;
 }
 
 #submit,
