@@ -60,6 +60,79 @@ h1:after {
   animation: cursor 1s linear infinite;
 }
 
+/* HEADSPACE */
+
+#heroEl {
+	width: 95%;
+	max-width: 1500px;
+	background-color: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(30px);
+	margin: auto;
+	margin-top: 10%;
+	padding: 30px;
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.095);
+}
+
+#hero {
+	margin: 0px 0px 15px;
+	font-size: 40pt;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	color: #ffe13e
+}
+
+#heroSpan {
+	font-weight: 700;
+	color: white;
+}
+
+#heroIcon {
+	display:inline-block;
+	height: 55px;
+	margin: 0px 7px 0px 0px;
+	transform:translateY(-5px);
+}
+
+#promptEl {
+	display: flex;
+	background-color: white;
+	margin: auto;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#promptInput {
+	flex-grow: 1;
+	margin-left: 5px;
+}
+
+.spinner-border {
+	margin: 2px 10px 1px 0px;
+}
+
+#submit,
+#submit:focus {
+	flex-shrink: 0;
+	justify-self: end;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(248, 180, 33),
+		rgb(255, 136, 0)
+	);
+	border-style: none;
+	border-radius: 8px;
+	padding: 5px 15px;
+	margin: -2px;
+	color: white;
+
+	font-size: 14pt;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+}
+
+/* WHATCH */
+
 #whatch {
   margin-left: auto;
   margin-right: auto;

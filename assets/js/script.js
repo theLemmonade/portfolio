@@ -54,7 +54,7 @@ function display() {
 
 setTimeout(() => {
   display();
-}, 6500);
+}, 200);
 
 function darkmode() {
   body.classList.toggle("dark-mode");
