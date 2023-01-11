@@ -94,7 +94,7 @@ h1:after {
 #heroIcon {
 	display:inline-block;
 	height: 30px;
-	margin: 0px 3px 0px 0px;
+	margin: 0px 5px 0px 0px;
 	transform:translateY(-3px);
 }
 
@@ -142,7 +142,7 @@ h1:after {
   margin-bottom: -550px;
 }
 
-.whatchtext {
+#whatchtext {
   text-align: center;
   transform: translateY(-210px);
   color: white;
