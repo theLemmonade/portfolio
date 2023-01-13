@@ -50,6 +50,7 @@ function typist(text, target) {
 }
 
 function display() {
+  // hide intro anim, show portfolio
 	console.log("waited 6.5s, hiding title, displaying page");
 	title.setAttribute("style", "display: none");
 	container.setAttribute("style", "display: block");
