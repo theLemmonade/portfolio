@@ -17,6 +17,7 @@ const message = `>_ portfolio-site:~ -u root -p
 >_ loading easter egg
 >_
 >_ Welcome.`;
+console.log(message);
 
 function rerun() {
 	title.textContent = "";
@@ -27,7 +28,6 @@ function rerun() {
 rerun();
 
 function interval(letter) {
-	console.log(letter);
 	if (letter == ";" || letter == "." || letter == ",") {
 		return Math.floor(Math.random() * 250 + 250);
 	} else {
@@ -52,6 +52,7 @@ function typist(text, target) {
 function display() {
   // hide intro anim, show portfolio
 	console.log("waited 6.5s, hiding title, displaying page");
+	console.log("don't miss the easter egg ;)");
 	title.setAttribute("style", "display: none");
 	container.setAttribute("style", "display: block");
 }
@@ -59,7 +60,7 @@ function display() {
 setTimeout(() => {
 	display();
   // config intro anim duration
-}, 6000);
+}, 6500);
 
 function darkmode() {
   // config attributes for dark mode
